@@ -1,14 +1,17 @@
-import { Produto }  from './Produtos.js';
-import { Padaria }  from './Padaria.js';
-import { Acougue }  from './Acougue.js';
+import { Produto } from './Produto.js';
+import { Padaria } from './Padaria.js';
+import { Acougue } from './Acougue.js';
 
-let produto1 = new Produto(`Café`,30,2026,12)
-let produto2 = new Produto(`Pão`,10,2026,1)
+let produto1 = new Produto ("farinha","R$ 10,00", 2026, "12DEZ");
+let produto2 = new Padaria ("pão","R$ 15,00", 2026, "12DEZ",200,"piraque");
+let produto3 = new Acougue ("carne","R$ 50,00", 2026, "5OUT", "5KG","fraudinha");
+console.log(produto1.exibirProduto());
 
-let produto3 = new Padaria(`Bolo`,12,2026,10, 3)
-let produto4 = new Acougue(`Carne`,50,2026,10, 2)
+produto1.nome = "lapis"
 
-console.log(produto1.ExibirProduto())
-console.log(produto2.ExibirProduto())
-console.log(produto3.ExibirProduto())
-console.log(produto4.ExibirProduto())
+produto2.nome = "arroz"
+produto2.quantidade = 10
+produto2.fabricacao = "ana maria"
+produto3.nome="sapato"
+console.log(produto2.exibirProduto());
+console.log(produto3.exibirProduto());
