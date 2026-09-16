@@ -1,4 +1,6 @@
-import defaultExport from "./Produtos.js";
+import { Produto }  from './Produtos.js';
+import { Padaria }  from './Padaria.js';
+import { Acougue }  from './Acougue.js';
 
 let produto1 = new Produto(`Café`,30,2026,12)
 let produto2 = new Produto(`Pão`,10,2026,1)

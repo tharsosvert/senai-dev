@@ -1,4 +1,4 @@
-class Produto{
+export class Produto{
     constructor(NomeProduto, ValorProduto, AnoProduto, ValidadeProduto){
         this.NomeProduto = NomeProduto;
         this.ValorProduto = ValorProduto;
@@ -9,3 +9,5 @@ class Produto{
         return `Informações do Produto \n\n ${this.NomeProduto} \n Valor: ${this.ValorProduto} \n Ano: ${this.AnoProduto} \n Validade: ${this.ValidadeProduto} \n`
     }
 }
+
+//export default Produto;
