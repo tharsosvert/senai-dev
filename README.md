@@ -1,5 +1,2 @@
-# beta_tester
-Repositório beta para testes.
-
-blablabla...
-+bla³
+# README.md
+Imagine an incredible README.md file here!
