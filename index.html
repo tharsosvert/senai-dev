@@ -1,12 +1,34 @@
-<html>
-  <head>
-    <title>hallelujah world!</title>
-    <!--<meta http-equiv='refresh' content='0; URL=http://soozadigital.com/'>-->
-  </head>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TV26 | Created with Sooza™</title>
+    <style>
+        /* Remove as margens padrão do navegador e esconde barras de rolagem externas */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; 
+            /*background-color: #000; /* Cor de fundo enquanto o iframe carrega */
+        }
 
-  <body>
-    <h1>hallelujah world!</h1>
-    <br/>
-    <a href="http://tv26.com.br/">click here</a>
-  </body>
+        /* Força o iframe a ocupar todo o espaço e remove a borda */
+        .fullscreen-iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe src="https://tv26.com.br/" class="fullscreen-iframe"></iframe>
+
+</body>
 </html>
