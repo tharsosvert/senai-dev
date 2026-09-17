@@ -13,5 +13,10 @@ produto2.nome = "arroz"
 produto2.quantidade = 10
 produto2.fabricacao = "ana maria"
 produto3.nome="sapato"
+
+//produto1.setNome("lapis");
+//produto2.setNome("arroz");
+//produto3.setNome("sapato");
+
 console.log(produto2.exibirProduto());
 console.log(produto3.exibirProduto());
