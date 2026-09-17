@@ -20,7 +20,7 @@ produto3.nome="sapato"
 // produto3.setNome("sapato");
 
 //EXIBIR 
-console.log(Produto.exibirProduto());
+// console.log(Produto.exibirProduto());
 // console.log(produto1.exibirProduto());
 console.log(produto2.exibirProduto());
 console.log(produto3.exibirProduto());
