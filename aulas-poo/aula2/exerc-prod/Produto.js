@@ -1,12 +1,11 @@
 export class Produto{
   #nome;
-  #valor;
+  static valor = 10;
   #ano;
   #validade;
 
-  constructor(nome,valor,ano,validade){
+  constructor(nome,ano,validade){
     this.#nome = nome;
-    this.#valor = valor;
     this.#ano = ano;
     this.#validade = validade;
   }
@@ -21,17 +20,18 @@ export class Produto{
     this.#nome = novoNome;
   }
 
-  getValor(){
-    return this.#valor;
-  }
+  // getValor(){
+  //   return this.#valor;
+  // }
 
-  setValor(novoValor){
-    this.#valor = novoValor;
-  }
+  // setValor(novoValor){
+  //   this.#valor = novoValor;
+  // }
 
 
-  exibirProduto(){
-  return `O produto é ${this.#nome} de valor ${this.#valor} do ano ${this.#ano} de validade ${this.#validade}`
+  static exibirProduto(){
+    return `Mensagem padrão do produto \n valor ${this.valor}`
+    
   }
 }
 

@@ -20,6 +20,6 @@ export class Acougue extends Produto{
   }*/
 
   exibirProduto(){
-    return `O produto é ${this.getNome()} de valor ${this.getValor()} do peso ${this.#peso} do corte ${this.#tipo}`
+    return `O produto é ${this.nome} de valor ${this.valor} do peso ${this.#peso} do corte ${this.#tipo}`
     }
 }
