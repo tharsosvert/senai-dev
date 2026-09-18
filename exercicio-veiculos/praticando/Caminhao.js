@@ -1,14 +1,17 @@
-import { Veiculo } from "./Veiculo";
+import { Veiculo } from "./Veiculo.js";
 
 export class Caminhao extends Veiculo {
     #capacidadeCarga;
-    constructor (marca, modelo, autonomiaKml, capacidadeCarga){
-        super(marca, modelo, autonomiaKml);
+    constructor (marca, modelo, autonomiaKmL, capacidadeCarga){
+        super(marca, modelo, autonomiaKmL);
         this.#capacidadeCarga = capacidadeCarga;
     }
 
     descricao(){
-        return "descrição Caminhão"
+        return `--- Dados do Caminhão ---\n
+                Marca: ${this.getMarca()}\n 
+                Modelo: ${this.getModelo()}\n
+                Autonomia Km/L: ${this.getAutonomiaKmL()} kms`
     }
 
     calcularFrete(){

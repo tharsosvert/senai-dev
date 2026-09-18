@@ -2,31 +2,32 @@ export class Veiculo {
     #marca; //String
     #modelo; //String
     #autonomiaKmL; //Number
+    
+    static totalCriados = 0; //Number
+    static quantosCriados; //
+
     constructor (marca, modelo, autonomiaKmL){
         this.#marca = marca;
         this.#modelo = modelo;
         this.#autonomiaKmL = autonomiaKmL;
     }
     
-    static totalCriados; //Number
-
     descricao(){
-        return "descrição Veículo" //String
+        return `--- Dados do Veículo ---\n
+                Marca: ${this.#marca}\n 
+                Modelo: ${this.#modelo}\n
+                Autonomia Km/L: ${this.#autonomiaKmL} kms`
     }
 
     litrosParaViagem(km){
         return `litros para viagem ${km}` //Number
     }
 
-    static quantosCriados(){
-        return "quantos criados" //Number
-    }
-
     getMarca(){
         return this.#marca;
     }
 
-    setNome(novaMarca){
+    setMarca(novaMarca){
         this.#marca = novaMarca;
     }
 
