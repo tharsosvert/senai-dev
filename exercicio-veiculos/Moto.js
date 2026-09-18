@@ -1,4 +1,6 @@
-export class Moto {
+import { Veiculo } from "./Veiculo";
+
+export class Moto extends Veiculo{
     #cilindradas; //Number
     constructor (marca, modelo, autonomiaKml, cilindradas){
         super(marca, modelo, autonomiaKml);
@@ -11,5 +13,13 @@ export class Moto {
 
     ehAltaCilindrada(){
         return "eh Alta Cilindrada"
+    }
+
+    getCilindradas(){
+        return this.#cilindradas;
+    }
+
+    setNovasCilindradas(novasCilindradas){
+        this.#cilindradas = novasCilindradas;
     }
 }

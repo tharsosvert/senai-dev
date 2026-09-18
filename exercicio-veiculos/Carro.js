@@ -1,4 +1,6 @@
-export class Carro {
+import { Veiculo } from "./Veiculo";
+
+export class Carro extends Veiculo{
     #portas; //Number
     constructor (marca, modelo, autonomiaKml, portas){
         super(marca, modelo, autonomiaKml);
@@ -11,5 +13,13 @@ export class Carro {
 
     temPortaMalasGrande(){
         return "porta malas: sim/não"
+    }
+
+    getPortas(){
+        return this.#portas;
+    }
+
+    setNovasPortas(novasPortas){
+        this.#portas = novasPortas;
     }
 }

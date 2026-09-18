@@ -21,4 +21,28 @@ export class Veiculo {
     static quantosCriados(){
         return "quantos criados" //Number
     }
+
+    getMarca(){
+        return this.#marca;
+    }
+
+    setNome(novaMarca){
+        this.#marca = novaMarca;
+    }
+
+    getModelo(){
+        return this.#modelo;
+    }
+
+    setModelo(novoModelo){
+        this.#modelo = novoModelo;
+    }
+
+    getAutonomiaKmL(){
+        return this.#autonomiaKmL;
+    }
+
+    setNovaAutonomiaKmL(novaAutonomiaKmL){
+        this.#autonomiaKmL = novaAutonomiaKmL;
+    }
 }
