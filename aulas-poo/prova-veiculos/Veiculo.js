@@ -12,7 +12,7 @@ export class Veiculo {
     }
 
     descricao(){
-        return `Descrição padrão de Veiculo`
+        return `Descrição padrão de Veiculo`;
     }
 
     litrosParaViagem(km){

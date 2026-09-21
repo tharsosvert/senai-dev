@@ -1,4 +1,4 @@
-import { VeiculoAquatico } from "./VeiculoAquatico";
+import { VeiculoAquatico } from "./VeiculoAquatico.js";
 
 export class Jetski extends VeiculoAquatico {
     #horasUso;
