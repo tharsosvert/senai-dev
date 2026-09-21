@@ -1,7 +1,7 @@
-import { Veiculo } from "./Veiculo.js";
+/*import { Veiculo } from "./Veiculo.js";
 import { Carro } from "./Carro.js";
 import { Moto } from "./Moto.js";
-import { Caminhao } from "./Caminhao.js";
+import { Caminhao } from "./Caminhao.js";*/
 
 //Dividendo(N) / Divisor (D) = Quociente (Q) e possui Resto (R)
 //Formula: (N/D=Q) e (R) | Exemplo: (10/2=5) e (R=0)
@@ -11,8 +11,8 @@ let divisor = 0;
 let calcLitros = 0;
 
 //retorna a quantidade de litros gastos
-calcularLitros(distanciaKm, autonomiaKmL)
-{
+export function calcularLitros(distanciaKm, autonomiaKmL){
+
     dividendo = distanciaKm;
     divisor = autonomiaKmL;
     
@@ -31,8 +31,7 @@ calcularLitros(distanciaKm, autonomiaKmL)
 
 
 //retorna o custo total em reais ; //litros*precoLitro
-calcularCusto(litros, precoLitro)
-{
+export function calcularCusto(litros, precoLitro){
     let calcCusto = litros * precoLitro;
     return calcCusto;
 }
@@ -40,14 +39,20 @@ calcularCusto(litros, precoLitro)
 
 
 //retorna o custo por quilômetro
-custoPorKm(custo, distanciaKm) //custo*
+export function custoPorKm(custo, distanciaKm){
+    return "Execução/Resultado [Função: custoPorKm]"
+} //custo*
 
 
 
 
 //retorna uma string no formato R$ 123,45
-formatarReais(valor)
+export function formatarReais(valor){
+    return "Execução/Resultado [Função: formatarReais]"
+}
 
 
 
-
+export function Roblox (alpha, beta) {
+    return `Congraats ${alpha + beta}` //test
+}

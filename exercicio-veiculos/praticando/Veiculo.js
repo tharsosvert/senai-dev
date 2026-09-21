@@ -4,7 +4,7 @@ export class Veiculo {
     #autonomiaKmL; //Number
     
     static totalCriados = 0; //Number
-    static quantosCriados; //
+    static quantosCriados; //incrementação
 
     constructor (marca, modelo, autonomiaKmL){
         this.#marca = marca;
