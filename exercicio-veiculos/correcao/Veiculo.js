@@ -1,58 +1,47 @@
-export class Veiculo {
-    #marca; //String
-    #modelo; //String
-    #autonomiaKmL; //Number
-    static totalCriados = 0; //Number
+export class Veiculo{
+    #marca;
+    #modelo;
+    #autonomiaKml;
+    static totalCriados = 0;
 
-    constructor (marca, modelo, autonomiaKmL){
+    constructor(marca,modelo,autonomiaKml){
         this.#marca = marca;
         this.#modelo = modelo;
-        this.#autonomiaKmL = autonomiaKmL;
+        this.#autonomiaKml = autonomiaKml;
+        this.totalCriados=+ 1;
     }
 
     getMarca(){
         return this.#marca;
     }
-
     setMarca(novaMarca){
-        this.#marca = novaMarca;
+        this.#marca= novaMarca;
     }
 
     getModelo(){
         return this.#modelo;
     }
-
     setModelo(novoModelo){
         this.#modelo = novoModelo;
     }
 
-    getAutonomiaKmL(){
-        return this.#autonomiaKmL;
+    getAutonomiaKml(){
+        return this.#autonomiaKml;
     }
-
-    setAutonomiaKmL(novaAutonomiaKmL){
-        this.#autonomiaKmL = novaAutonomiaKmL;
+    setAutonomiaKml(novaAutonomia){
+        this.#autonomiaKml = novaAutonomia;
     }
 
     descricao(){
-        return `---Dados do Veículo---\n
-                Marca: ${this.#marca}\n 
+        return `---Dados do Veiculo---\n
+                Marca: ${this.#marca}\n
                 Modelo: ${this.#modelo}\n
-                Autonomia Km/L: ${this.#autonomiaKmL} kms` //String
+                Autonomia KM/L: ${this.#autonomiaKml} kms`
     }
-    //Shit+Alt+Setinha copia para baixo
-
     descricaoConsole(){
-        console.log(`---Dados do Veículo---`)
-        console.log(`Marca: ${this.#marca}`)
-        console.log(`Modelo: ${this.#modelo}`)
-        console.log(`Autonomia Km/L: ${this.#autonomiaKmL} kms`)
-    }
-
-    descricaoAlert(){
-        alert(`Dados do Veículo\n
-                Marca: ${this.#marca}\n 
-                Modelo: ${this.#modelo}\n
-                Autonomia Km/L: ${this.#autonomiaKmL} kms`)
+        console.log( `---Dados do Veiculo---`);
+        console.log(`Marca: ${this.#marca}`);
+        console.log(`Modelo: ${this.#modelo}`);
+        console.log(`Autonomia KM/L: ${this.#autonomiaKml} kms`)
     }
 }

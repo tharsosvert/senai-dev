@@ -5,10 +5,7 @@ import { Caminhao } from "./Caminhao.js";
 import { Roblox } from "./calculos.js";
 
 // import { calculo } from "./calculos.js";
-import { calcularLitros } from "./calculos.js";
-import { calcularCusto } from "./calculos.js";
-import { custoPorKm } from "./calculos.js";
-import { formatarReais } from "./calculos.js";
+import { calcularLitros, calcularCusto, custoPorKm, formatarReais } from "./calculos.js";
 
 
 // alert("Hello World!");
