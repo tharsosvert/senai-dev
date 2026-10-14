@@ -9,7 +9,8 @@ use tharsosvert;
 # example comment 2
 */
 
-# create database senai_dev;
+create database senai_dev;
+
 use senai_dev;
 
 create table alunos (
