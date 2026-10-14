@@ -48,3 +48,6 @@ VALUES
 
 -- visualizar todos os clientes da tabela
 select * from cliente;
+
+select nome, email from cliente where matricula = 5;
+-- Ctrl + Enter para rodar a linha atual no Workbench
