@@ -49,5 +49,8 @@ VALUES
 -- visualizar todos os clientes da tabela
 select * from cliente;
 
+-- é possível visualizar com condicionais ou cresc/dec 
 select nome, email from cliente where matricula = 5;
 -- Ctrl + Enter para rodar a linha atual no Workbench
+
+select nome, nascimento from cliente order by nome;
