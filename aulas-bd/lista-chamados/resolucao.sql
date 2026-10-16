@@ -54,3 +54,12 @@ select * from consulta where matricula = 1001;
 -- apagando inversamente
 delete from consulta where matricula = 1001;
 delete from paciente where matricula = 1001;
+
+
+-- Cenário 4:
+-- A: 
+alter table paciente add email varchar(100) after nome;
+select * from paciente; -- check
+
+-- B:
+alter table medico modify especializacao varchar(50);
