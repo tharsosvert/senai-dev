@@ -15,3 +15,28 @@ create table caddis (
     
 describe cadpro;
 describe caddis;
+
+-- chave estrangeira com alter table
+/*
+alter table caddis add
+	constraint fkCodpro
+    foreign key (codpro)
+    references cadpro (codpro)
+    on update restrict on delete restrict;
+*/
+
+-- chave estrangeira criada direto na tabela 
+/*
+create table caddis (
+	coddis char(6) primary key not null,
+    nomedis varchar(40) not null,
+    codpro int (3),
+	constraint fkCodpro
+    foreign key (codpro)
+    references cadpro (codpro)
+    on update restrict on delete restrict
+    );
+*/
+
+show index from cadpro;
+show index from caddis;
